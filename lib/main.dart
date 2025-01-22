@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/HomePage.dart';
-import 'package:flutter_application_1/MainPageWidget.dart';
+import 'package:flutter_application_1/Splash_Page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,8 +33,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         //画面遷移のためのルーティング
-        // home: HomePage(),
-        home: MainPageWidget());
+        home: SplashScreen());
   }
 }
 
