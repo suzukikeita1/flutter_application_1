@@ -1,3 +1,0 @@
-仕様書
-
-Splash_Page.dartからmain.dartに遷移
