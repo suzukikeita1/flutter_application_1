@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: AnimatedOpacity(
           opacity: _opacity,
           duration: Duration(seconds: 1),
-          child: Image.asset('assets/images/logo.jpg',
+          child: Image.asset('assets/images/logo.png',
             fit: BoxFit.cover, // 画像が画面全体を覆うように設定
             width: double.infinity, // 画像の幅を画面全体に設定
             height: double.infinity, // 画像の高さを画面全体に設定
