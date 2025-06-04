@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Splash_Page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart'; // Riverpod のインポート
+import 'package:hive_flutter/hive_flutter.dart'; // Hive のインポート
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Hive を初期化して Box を開く（アプリ起動前に一度だけ）
+  await Hive.initFlutter();
+  await Hive.openBox('cache'); // 汎用キャッシュ用 Box
+
+  // Riverpod の DI ツリーを有効化
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
