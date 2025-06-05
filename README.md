@@ -1,16 +1,5 @@
 # flutter_application_1
 
-A new Flutter project.
+## Project Documentation
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [仕様書 (PowerPointスライド)](https://cleague-my.sharepoint.com/:p:/g/personal/zeal22410062_fsgcl_jp/EWSJM6QLBuFDr_8Hqy6PzUgBG3qXI3TrEmSpNtskuPyXBQ?e=7ApYb3)
