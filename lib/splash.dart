@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:flutter_application_1/main.dart';
+import 'package:flutter_application_1/features/menu/analysis_menu_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         PageRouteBuilder(
-          pageBuilder: (context, animation1, animation2) => MyHomePage(title: 'Flutter Demo Home Page'),
+          pageBuilder: (context, animation1, animation2) => AnalysisMenuScreen(),
           transitionDuration: Duration(seconds: 0), // 遷移アニメーションの時間を0に設定
         ),
       );

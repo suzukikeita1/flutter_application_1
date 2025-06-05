@@ -75,6 +75,7 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
+    - assets/ohtani_analysis_output.json
     - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
