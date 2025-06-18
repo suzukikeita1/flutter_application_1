@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:flutter_application_1/features/ops/monthly_ops_screen.dart';
 import 'package:flutter_application_1/features/scatter/launch_scatter_screen.dart';
+import 'package:flutter_application_1/features/zone/zone_heatmap_screen.dart';
 import 'package:flutter_application_1/providers/stat_provider.dart';
 
 // 初期メニュー画面
@@ -13,9 +14,10 @@ class AnalysisMenuScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final statsAsync = ref.watch(monthlyStatsProvider);
     final scatterAsync = ref.watch(launchPointsProvider);
+    final zoneAsync = ref.watch(zoneHeatmapProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Shohei Ohtani 分析メニュー')),
+      appBar: AppBar(title: const Text('Shohei Ohtani 分析メニュー 2024')),
       body: statsAsync.when(
         data: (data) => ListView(
           children: [
@@ -45,7 +47,20 @@ class AnalysisMenuScreen extends ConsumerWidget {
             error: (e, _) => ListTile(title: Text('打球散布図 エラー: $e')),
             ),
             const Divider(),
-              const ListTile(title: Text('🧊 ゾーン打率（後日追加）')),
+            zoneAsync.when(
+              data: (data) => ListTile(
+                title: const Text('🧊 ゾーン打率ヒートマップ'),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => ZoneHeatmapScreen(data: data),
+                  ),
+                ),
+              ),
+            loading: () => const ListTile(title: Text('📊 打球散布図（読み込み中）')),
+            error: (e, _) => ListTile(title: Text('打球散布図 エラー: $e')),
+            ),
           ],
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
