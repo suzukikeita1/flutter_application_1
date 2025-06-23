@@ -367,12 +367,12 @@
       "launch_angle": 53.0
     },
     {
-      "launch_speed": 107.9,
-      "launch_angle": 14.0
-    },
-    {
       "launch_speed": 107.3,
       "launch_angle": 25.0
+    },
+    {
+      "launch_speed": 107.9,
+      "launch_angle": 14.0
     },
     {
       "launch_speed": 114.0,
@@ -2246,6 +2246,12 @@
     {
       "pitch_type": "KN",
       "zone_x": 3,
+      "zone_z": 3,
+      "batting_avg": 0.0
+    },
+    {
+      "pitch_type": "KN",
+      "zone_x": 3,
       "zone_z": 4,
       "batting_avg": 0.0
     },
@@ -2529,7 +2535,7 @@
       "pitch_type": "SI",
       "zone_x": 7,
       "zone_z": 5,
-      "batting_avg": 0.11538461538461539
+      "batting_avg": 0.1111111111111111
     },
     {
       "pitch_type": "SI",
@@ -3153,11 +3159,11 @@
   "lr_batting_avg": [
     {
       "p_throws": "L",
-      "batting_avg": 0.06569343065693431
+      "batting_avg": 0.2891566265060241
     },
     {
       "p_throws": "R",
-      "batting_avg": 0.06669865642994242
+      "batting_avg": 0.30957683741648107
     }
   ]
 }
