@@ -5,6 +5,7 @@ import 'package:flutter_application_1/features/ops/monthly_ops_screen.dart';
 import 'package:flutter_application_1/features/scatter/launch_scatter_screen.dart';
 import 'package:flutter_application_1/features/zone/zone_heatmap_screen.dart';
 import 'package:flutter_application_1/features/handedness/lr_batting_chart_screen.dart';
+import 'package:flutter_application_1/features/batted_ball/batted_ball_pie_screen.dart';
 import 'package:flutter_application_1/providers/stat_provider.dart';
 
 // 初期メニュー画面
@@ -72,6 +73,17 @@ class AnalysisMenuScreen extends ConsumerWidget {
                   builder: (_) => const LrBattingChartScreen(),
                 ),
               ),
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text('🥧 打球傾向（円グラフ）'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const BattedBallPieScreen()),
+                );
+              },
             ),
           ],
         ),

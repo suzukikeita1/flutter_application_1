@@ -34,3 +34,11 @@ final lrBattingStatsProvider = FutureProvider<List<PitcherHandStat>>((ref) async
   final List<dynamic> jsonList = jsonMap['lr_batting_avg'];
   return jsonList.map((e) => PitcherHandStat.fromJson(e)).toList();
 });
+
+final battedBallRatioProvider = FutureProvider<Map<String, double>>((ref) async {
+  final jsonString = await rootBundle.loadString('assets/ohtani_analysis_output.json');
+  final jsonMap = jsonDecode(jsonString);
+  final rawMap = jsonMap['batted_ball_ratio'] as Map<String, dynamic>;
+
+  return rawMap.map((key, value) => MapEntry(key, (value as num).toDouble()));
+});
