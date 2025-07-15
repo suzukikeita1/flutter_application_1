@@ -2,6 +2,7 @@ import 'package:flutter_application_1/models/monthly_stat.dart';
 import 'package:flutter_application_1/models/launch_point.dart';
 import 'package:flutter_application_1/models/zone_cell.dart';
 import 'package:flutter_application_1/models/pitcher_hand_stat.dart';
+import 'package:flutter_application_1/models/pitch_type_stat.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -41,4 +42,12 @@ final battedBallRatioProvider = FutureProvider<Map<String, double>>((ref) async 
   final rawMap = jsonMap['batted_ball_ratio'] as Map<String, dynamic>;
 
   return rawMap.map((key, value) => MapEntry(key, (value as num).toDouble()));
+});
+
+final pitchTypeStatsProvider = FutureProvider<List<PitchTypeStat>>((ref) async {
+  final jsonString = await rootBundle.loadString('assets/ohtani_analysis_output.json');
+  final jsonData = jsonDecode(jsonString);
+  final List<dynamic> rawList = jsonData['pitch_type_stats'];
+
+  return rawList.map((e) => PitchTypeStat.fromJson(e)).toList();
 });

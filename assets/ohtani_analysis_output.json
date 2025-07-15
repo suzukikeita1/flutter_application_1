@@ -867,7 +867,7 @@
       "pitch_type": "CH",
       "zone_x": 3,
       "zone_z": 4,
-      "batting_avg": 0.043478260869565216
+      "batting_avg": 0.041666666666666664
     },
     {
       "pitch_type": "CH",
@@ -909,13 +909,13 @@
       "pitch_type": "CH",
       "zone_x": 4,
       "zone_z": 4,
-      "batting_avg": 0.047619047619047616
+      "batting_avg": 0.046511627906976744
     },
     {
       "pitch_type": "CH",
       "zone_x": 4,
       "zone_z": 5,
-      "batting_avg": 0.14285714285714285
+      "batting_avg": 0.13636363636363635
     },
     {
       "pitch_type": "CH",
@@ -957,7 +957,7 @@
       "pitch_type": "CH",
       "zone_x": 5,
       "zone_z": 4,
-      "batting_avg": 0.26666666666666666
+      "batting_avg": 0.25
     },
     {
       "pitch_type": "CH",
@@ -1290,24 +1290,6 @@
       "batting_avg": 0.0
     },
     {
-      "pitch_type": "FA",
-      "zone_x": 1,
-      "zone_z": 6,
-      "batting_avg": 0.0
-    },
-    {
-      "pitch_type": "FA",
-      "zone_x": 2,
-      "zone_z": 6,
-      "batting_avg": 0.0
-    },
-    {
-      "pitch_type": "FA",
-      "zone_x": 5,
-      "zone_z": 6,
-      "batting_avg": 1.0
-    },
-    {
       "pitch_type": "FC",
       "zone_x": 1,
       "zone_z": 7,
@@ -1586,6 +1568,12 @@
     {
       "pitch_type": "FF",
       "zone_x": 1,
+      "zone_z": 6,
+      "batting_avg": 0.0
+    },
+    {
+      "pitch_type": "FF",
+      "zone_x": 1,
       "zone_z": 7,
       "batting_avg": 0.0
     },
@@ -1737,7 +1725,7 @@
       "pitch_type": "FF",
       "zone_x": 5,
       "zone_z": 6,
-      "batting_avg": 0.07207207207207207
+      "batting_avg": 0.08035714285714286
     },
     {
       "pitch_type": "FF",
@@ -1953,13 +1941,13 @@
       "pitch_type": "FS",
       "zone_x": 4,
       "zone_z": 4,
-      "batting_avg": 0.07692307692307693
+      "batting_avg": 0.08333333333333333
     },
     {
       "pitch_type": "FS",
       "zone_x": 4,
       "zone_z": 5,
-      "batting_avg": 0.2
+      "batting_avg": 0.2222222222222222
     },
     {
       "pitch_type": "FS",
@@ -1989,7 +1977,7 @@
       "pitch_type": "FS",
       "zone_x": 5,
       "zone_z": 4,
-      "batting_avg": 0.17391304347826086
+      "batting_avg": 0.19047619047619047
     },
     {
       "pitch_type": "FS",
@@ -2019,12 +2007,6 @@
       "pitch_type": "FS",
       "zone_x": 6,
       "zone_z": 2,
-      "batting_avg": 0.0
-    },
-    {
-      "pitch_type": "FS",
-      "zone_x": 6,
-      "zone_z": 3,
       "batting_avg": 0.0
     },
     {
@@ -3156,6 +3138,30 @@
     "Liner": 0.21421215242018538,
     "Popup": 0.15550978372811536
   },
+  "batted_ball_stats": [
+    {
+      "player": "Shohei Ohtani",
+      "label": "\u5168\u4f53",
+      "stats": [
+        {
+          "type": "Grounder",
+          "ratio": 0.34397528321318227
+        },
+        {
+          "type": "Fly",
+          "ratio": 0.286302780638517
+        },
+        {
+          "type": "Liner",
+          "ratio": 0.21421215242018538
+        },
+        {
+          "type": "Popup",
+          "ratio": 0.15550978372811536
+        }
+      ]
+    }
+  ],
   "lr_batting_avg": [
     {
       "p_throws": "L",
@@ -3164,6 +3170,68 @@
     {
       "p_throws": "R",
       "batting_avg": 0.30957683741648107
+    }
+  ],
+  "pitch_type_stats": [
+    {
+      "pitch_type": "CH",
+      "at_bats": 72,
+      "hits": 23,
+      "batting_avg": 0.3194444444444444
+    },
+    {
+      "pitch_type": "CU",
+      "at_bats": 39,
+      "hits": 16,
+      "batting_avg": 0.41025641025641024
+    },
+    {
+      "pitch_type": "FC",
+      "at_bats": 67,
+      "hits": 20,
+      "batting_avg": 0.29850746268656714
+    },
+    {
+      "pitch_type": "FF",
+      "at_bats": 188,
+      "hits": 52,
+      "batting_avg": 0.2765957446808511
+    },
+    {
+      "pitch_type": "FS",
+      "at_bats": 38,
+      "hits": 15,
+      "batting_avg": 0.39473684210526316
+    },
+    {
+      "pitch_type": "KC",
+      "at_bats": 20,
+      "hits": 2,
+      "batting_avg": 0.1
+    },
+    {
+      "pitch_type": "KN",
+      "at_bats": 1,
+      "hits": 0,
+      "batting_avg": 0.0
+    },
+    {
+      "pitch_type": "SI",
+      "at_bats": 116,
+      "hits": 42,
+      "batting_avg": 0.3620689655172414
+    },
+    {
+      "pitch_type": "SL",
+      "at_bats": 113,
+      "hits": 34,
+      "batting_avg": 0.3008849557522124
+    },
+    {
+      "pitch_type": "ST",
+      "at_bats": 43,
+      "hits": 7,
+      "batting_avg": 0.16279069767441862
     }
   ]
 }

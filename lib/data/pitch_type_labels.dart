@@ -1,0 +1,17 @@
+const pitchTypeMap = {
+  'FF': '4-Seam Fastball',
+  'SI': 'Sinker',
+  'FT': '2-Seam Fastball',
+  'SL': 'Slider',
+  'FC': 'Cutter',
+  'CH': 'Changeup',
+  'CU': 'Curveball',
+  'KC': 'Knuckle Curve',
+  'FS': 'Splitter',
+  'ST': 'Sweeper',
+  'EP': 'Eephus',
+  'PO': 'Pitch Out',
+  'IN': 'Intentional Ball',
+  'FO': 'Forkball',
+  'KN': 'Knuckleball',
+};

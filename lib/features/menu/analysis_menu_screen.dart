@@ -6,6 +6,7 @@ import 'package:flutter_application_1/features/scatter/launch_scatter_screen.dar
 import 'package:flutter_application_1/features/zone/zone_heatmap_screen.dart';
 import 'package:flutter_application_1/features/handedness/lr_batting_chart_screen.dart';
 import 'package:flutter_application_1/features/batted_ball/batted_ball_pie_screen.dart';
+import 'package:flutter_application_1/features/pitch_type/pitch_type_stats_screen.dart';
 import 'package:flutter_application_1/providers/stat_provider.dart';
 
 // 初期メニュー画面
@@ -82,6 +83,17 @@ class AnalysisMenuScreen extends ConsumerWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => const BattedBallPieScreen()),
+                );
+              },
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text('🎯 球種別成績を見る'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const PitchTypeStatsScreen()),
                 );
               },
             ),
